@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600&display=swap');
 
 :root {
-  --bg: #F6F1EB;
-  --text: #2B2B2B;
-  --accent: #B08D57;
+  --bg: #FFF8E7;
+  --text: #333333;
+  --accent: #FF8C42;
 }
 
 body {
   margin: 0;
-  font-family: 'EB Garamond', serif;
+  font-family: 'Nunito', sans-serif;
   background: var(--bg);
   color: var(--text);
 }
@@ -22,18 +22,29 @@ nav a {
   margin: 0 1rem;
   text-decoration: none;
   color: var(--text);
-  font-weight: 500;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--accent);
 }
 
 h1, h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 0.5rem;
 }
 
 button {
-  background: none;
-  border: 1px solid var(--accent);
+  background: var(--accent);
+  border: none;
   padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
 }
 
 .shop-grid {
@@ -43,9 +54,18 @@ button {
   padding: 2rem;
 }
 
+.product {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
 .product img {
   width: 100%;
-  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
 }
 
 /* CART DRAWER */
@@ -55,8 +75,8 @@ button {
   right: -350px;
   width: 350px;
   height: 100%;
-  background: #fff;
-  border-left: 1px solid #ddd;
+  background: #fff5e9;
+  border-left: 2px solid var(--accent);
   padding: 1rem;
   transition: right 0.3s ease;
   z-index: 1000;
