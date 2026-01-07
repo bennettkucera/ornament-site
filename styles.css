@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=EB+Garamond&display=swap');
+
+:root {
+  --bg: #F6F1EB;
+  --text: #2B2B2B;
+  --accent: #B08D57;
+}
+
+body {
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+button {
+  background: none;
+  border: 1px solid var(--accent);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product img {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+/* CART DRAWER */
+#cartDrawer {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 350px;
+  height: 100%;
+  background: #fff;
+  border-left: 1px solid #ddd;
+  padding: 1rem;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+#cartDrawer.open {
+  right: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
