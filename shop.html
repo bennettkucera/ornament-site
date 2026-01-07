@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Shop Ornaments</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#" onclick="toggleCart()">Cart</a>
+  </nav>
+</header>
+
+<div class="shop-grid">
+  <div class="product">
+    <img src="images/placeholder.jpg">
+    <h3>Glass Ornament</h3>
+    <p>$45.00</p>
+    <button onclick="addToCart('Glass Ornament', 45)">Add to Cart</button>
+  </div>
+</div>
+
+<div id="cartDrawer">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <button onclick="checkout()">Checkout</button>
+</div>
+
+</body>
+<script src="cart.js"></script>
+</html>
